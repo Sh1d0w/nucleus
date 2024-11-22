@@ -27,7 +27,7 @@ export const useOpenIDConnect = () => {
     }
 
     const user: User = {
-      id: email.value,
+      id: sub,
       displayName: profile.displayName,
       isAdmin: adminIdentifiers.indexOf(email.value) !== -1,
       photos: [
